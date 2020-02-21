@@ -1,0 +1,461 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:900|Roboto:400,100); /*Domo arigato Mr. Roboto*/
+
+body
+{
+	background-color: #fff;
+	padding: 20px;
+}
+
+#myGame
+{
+	font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 400;
+	width: 1000px; height: 1000px;
+	position: relative;
+	overflow: hidden;
+	color: #fff;
+	background: #fff url(./../images/connect4grid.jpg) no-repeat 0px 0px;
+	/*background: #000 url(./../images/background.jpg) no-repeat 0px 0px; This is for the full version, background will change to connect 4 grid with js*/
+}
+
+#myGame h1 
+{
+	font-weight: 100; font-size: 2em; text-transform: uppercase;
+	margin: 0px;
+	position: absolute; top: 25px; left: 36px;
+}
+
+#myGame h1 span
+{
+	display: block; font-weight: 900; font-family:'Titillium Web', sans-serif;
+	font-size: 3.2em; line-height: 65px;
+}
+
+#myGame h2
+{
+	font-size: 3em; margin: 0px; font-weight: 100;
+}
+
+#myGame h3
+{
+	font-size: 2.4em; margin: 0px; font-weight: 100;
+}
+
+#myGame p
+{
+	margin: 0px 0px 14px 0px;
+}
+/*Intro*/	
+#myGame .intro
+{
+	position: absolute; top: 225px; left: 1060px; /* Change to 660 to throw it off the screen */ width: 550px;
+}
+
+#myGame .intro p
+{
+	margin: 0px 0px 40px 0px; font-color: #fff;
+}
+
+#myGame .btn
+{
+	display: inline-block; cursor: pointer; background-color: #c04b01;
+	color: #fff; text-decoration: none;
+	padding: 5px 15px; border-radius: 6px;
+}
+
+#myGame .intro p.btn
+{
+	position: absolute; top: 90px; left: 2px;
+}
+
+/*Game Play */
+#myGame .game
+{
+	/* Something here eventually */
+}
+
+#myGame .game .column1
+{
+	cursor: pointer;
+	position: relative; display: inline-block; width: 197px; height: 1000px;
+	/*background-color: green;*/
+}
+
+#myGame .game .column2
+{
+	cursor: pointer;
+	position: relative; display: inline-block; width: 196px; height: 1000px;
+	/*background-color: gray; */
+}
+
+#myGame .game .column3
+{
+	cursor: pointer;
+	position: relative; display: inline-block; width: 196px; height: 1000px;
+	/*background-color: purple; */
+}
+
+#myGame .game .column4
+{
+	cursor: pointer;
+	position: relative; display: inline-block; width: 196px; height: 1000px;
+	/*background-color: orange;*/
+}
+
+#myGame .game .column5
+{
+	cursor: pointer;
+	position: relative; display: inline-block; width: 198px; height: 1000px;
+	/*background-color: black;*/
+}
+
+#myGame .game .graphic:hover
+{
+	background-color: rgba(238, 189, 102, .5);
+}
+
+/*#myGame .game .alertArea
+{
+	
+}
+*/
+#myGame .game .red11
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: red; top: -821px; left: 12px;
+}
+
+#myGame .game .red12
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: red; top: -821px; left: 12px;
+}
+
+#myGame .game .red13
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: red; top: -821px; left: 12px;
+}
+
+#myGame .game .red14
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: red; top: -821px; left: 12px;
+}
+
+#myGame .game .red15
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: red; top: -821px; left: 12px;
+}
+
+#myGame .game .red21
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: red; top: -821px; left: 215px;
+}
+
+#myGame .game .red22
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: red; top: -821px; left: 215px;
+}
+
+#myGame .game .red23
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: red; top: -821px; left: 215px;
+}
+
+#myGame .game .red24
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: red; top: -821px; left: 215px;
+}
+
+#myGame .game .red25
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: red; top: -821px; left: 215px;
+}
+
+#myGame .game .red31
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: red; top: -821px; left: 418px;
+}
+
+#myGame .game .red32
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: red; top: -821px; left: 418px;
+}
+
+#myGame .game .red33
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: red; top: -821px; left: 418px;
+}
+
+#myGame .game .red34
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: red; top: -821px; left: 418px;
+}
+
+#myGame .game .red35
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: red; top: -821px; left: 418px;
+}
+
+#myGame .game .red41
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: red; top: -821px; left: 621px;
+}
+
+#myGame .game .red42
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: red; top: -821px; left: 621px;
+}
+
+#myGame .game .red43
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: red; top: -821px; left: 621px;
+}
+
+#myGame .game .red44
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: red; top: -821px; left: 621px;
+}
+
+#myGame .game .red45
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: red; top: -821px; left: 621px;
+}
+
+#myGame .game .red51
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: red; top: -821px; left: 824px;
+}
+
+#myGame .game .red52
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: red; top: -821px; left: 824px;
+}
+
+#myGame .game .red53
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: red; top: -821px; left: 824px;
+}
+
+#myGame .game .red54
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: red; top: -821px; left: 824px;
+}
+
+#myGame .game .red55
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: red; top: -821px; left: 824px;
+}
+
+#myGame .game .yellow11
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: yellow; top: -821px; left: 12px;
+}
+
+#myGame .game .yellow12
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: yellow; top: -821px; left: 12px;
+}
+
+#myGame .game .yellow13
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: yellow; top: -821px; left: 12px;
+}
+
+#myGame .game .yellow14
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: yellow; top: -821px; left: 12px;
+}
+
+#myGame .game .yellow15
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: yellow; top: -821px; left: 12px;
+}
+
+#myGame .game .yellow21
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: yellow; top: -821px; left: 215px;
+}
+
+#myGame .game .yellow22
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: yellow; top: -821px; left: 215px;
+}
+
+#myGame .game .yellow23
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: yellow; top: -821px; left: 215px;
+}
+
+#myGame .game .yellow24
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: yellow; top: -821px; left: 215px;
+}
+
+#myGame .game .yellow25
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: yellow; top: -821px; left: 215px;
+}
+
+#myGame .game .yellow31
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: yellow; top: -821px; left: 418px;
+}
+
+#myGame .game .yellow32
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: yellow; top: -821px; left: 418px;
+}
+
+#myGame .game .yellow33
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: yellow; top: -821px; left: 418px;
+}
+
+#myGame .game .yellow34
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: yellow; top: -821px; left: 418px;
+}
+
+#myGame .game .yellow35
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: yellow; top: -821px; left: 418px;
+}
+
+#myGame .game .yellow41
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: yellow; top: -821px; left: 621px;
+}
+
+#myGame .game .yellow42
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: yellow; top: -821px; left: 621px;
+}
+
+#myGame .game .yellow43
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: yellow; top: -821px; left: 621px;
+}
+
+#myGame .game .yellow44
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: yellow; top: -821px; left: 621px;
+}
+
+#myGame .game .yellow45
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: yellow; top: -821px; left: 621px;
+}
+
+#myGame .game .yellow51
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: yellow; top: -821px; left: 824px;
+}
+
+#myGame .game .yellow52
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: yellow; top: -821px; left: 824px;
+}
+
+#myGame .game .yellow53
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: yellow; top: -821px; left: 824px;
+}
+
+#myGame .game .yellow54
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: yellow; top: -821px; left: 824px;
+}
+
+#myGame .game .yellow55
+{
+	position: absolute; display: inline-block; width: 165px; height: 181px;
+	border-radius: 50%; background-color: yellow; top: -821px; left: 824px;
+}
+
+/*Results*/
+
+#myGame .results 
+{
+	position: absolute; top: 225px; left: 1060px; /* Change this to 1060 to move off screen  */ width: 550px;
+}
+
+#myGame .results .share
+{
+	margin-top: 40px;
+}
+
+#myGame .results .share a.btn
+{
+	margin-right: 20px; padding: 9px 15px 8px 42px;
+	background-repeat: no-repeat;
+	background-position: 10px 5px;
+	background-size: 25px 25px;
+}
+
+#myGame .results .share a.btn.email
+{
+	background-color: #f0a121;
+	background-image: url(./../images/icon_email.svg);
+}
+
+#myGame .results .share a.btn.twitter
+{
+	background-color: #59adeb;
+	background-image: url(./../images/icon_twitter.svg);
+}
+
+/*#myGame .results .playAgain a.btn.playAgain
+{
+	
+}
+
+#myGame .results .scoreBoard
+{
+	div with yellow wins, red wins, and ties
+}
